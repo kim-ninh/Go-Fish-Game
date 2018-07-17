@@ -34,7 +34,7 @@
             this.textBooks = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.listHand = new System.Windows.Forms.ListBox();
             this.buttonAsk = new System.Windows.Forms.Button();
@@ -92,14 +92,15 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Books";
             // 
-            // button1
+            // buttonStart
             // 
-            this.button1.Location = new System.Drawing.Point(164, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Start the game!";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonStart.Location = new System.Drawing.Point(164, 36);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(148, 23);
+            this.buttonStart.TabIndex = 6;
+            this.buttonStart.Text = "Start the game!";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // label4
             // 
@@ -127,6 +128,7 @@
             this.buttonAsk.TabIndex = 9;
             this.buttonAsk.Text = "Ask for a card";
             this.buttonAsk.UseVisualStyleBackColor = true;
+            this.buttonAsk.Click += new System.EventHandler(this.buttonAsk_Click);
             // 
             // Form1
             // 
@@ -136,7 +138,7 @@
             this.Controls.Add(this.buttonAsk);
             this.Controls.Add(this.listHand);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBooks);
@@ -160,7 +162,7 @@
         private System.Windows.Forms.TextBox textBooks;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listHand;
         private System.Windows.Forms.Button buttonAsk;
