@@ -81,7 +81,10 @@ namespace GoFishGame
             }
 
             if (howManyCardAdded == 0)
-                textBoxOnForm.Text +=( this.Name + " had to draw from the stock.\r\n");
+            {
+                this.cards.Add(stock.Deal());
+                textBoxOnForm.Text += (this.Name + " had to draw from the stock.\r\n");
+            }
         }
 
         public int CardCount { get { return cards.Count; } }
